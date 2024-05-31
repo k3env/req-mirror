@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	log.Fatalf("Error on starting web server: %s", http.ListenAndServe(":9091", &handler{}))
+	log.Fatalf("Error on starting web server: %s", http.ListenAndServe(":3250", &handler{}))
 }
 
 type handler struct{}
