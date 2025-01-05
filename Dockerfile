@@ -2,7 +2,7 @@ FROM golang:alpine AS builder
 WORKDIR /build
 ADD go.mod .
 COPY . .
-RUN go build -o mirror main.go
+RUN go build -o mirror .
 
 FROM alpine
 WORKDIR /app
